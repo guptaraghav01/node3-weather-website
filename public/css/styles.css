@@ -30,11 +30,19 @@ header{
     margin-top: 16px;
     margin-bottom: 48px;
 }
-
-h1{
-    font-size: 64px;
+header h1{
+    font-size: 3.6rem;
     margin-bottom: 16px;
 }
+
+header a{
+    font-size: 1.5rem;
+}
+
+/* h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+} */
 
 header a{
     color: #eeeeee;
@@ -48,7 +56,7 @@ header a{
 }
 
 input{
-    border: 1px solid #cccccc;
+    border: 1px solid #B0E298;
     padding: 8px;
 }
 
@@ -61,8 +69,30 @@ button{
 }
 .tech-stack{
     display: flex;
+    font-size: 1.3rem;
+    /* flex-direction: column; */
 }
 .tech-stack a{
     text-decoration: none;
-    color: #888888;
+    color: #ccffcc;
+}
+
+#message-2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.main-content p{
+    font-size: 1.1rem;
+}
+.main-content #help-message{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 502px)
+{
+    .tech-stack{
+        flex-direction: column;
+    }
 }

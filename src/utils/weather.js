@@ -8,7 +8,7 @@ const weather = (latitude, longitude, callback) => {
     longitude +
     "&units=f";
 
-  request({ url, json: true }, (error, {body}) => {
+  request({ url, json: true }, (error, { body }) => {
     if (error) {
       callback("Unable to connect to weather service.", undefined);
     } else if (body.error) {
@@ -21,7 +21,9 @@ const weather = (latitude, longitude, callback) => {
           body.current.temperature +
           " degrees outside, but it feels like " +
           body.current.feelslike +
-          " degrees."
+          " degrees. \n " +
+          "Date and time: " +
+          body.location.localtime
       );
     }
   });
