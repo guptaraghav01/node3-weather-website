@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+    <title>About</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <div class="tech-stack">
+            <ul>
+                Tech Stack:
+                <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+                <li> <a href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blank">Javascript</a>
+                </li>
+                <li><a href="https://nodejs.org/en/" target="_blank">Nodejs</a></li>
+                <li><a href="https://expressjs.com/" target="_blank">Expressjs</a></li>
+            </ul>
+            <ul>
+                NPM Packages Used:
+                <li><a href="https://www.npmjs.com/package/postman-request", target="_blank">postman-request</a></li>
+                <li><a href="https://www.npmjs.com/package/hbs" target="_blank">HandleBars(hbs)</a></li>
+            </ul>
+            <ul>
+                API's Used: 
+                <li><a href="https://weatherstack.com/" target="_blank">WeatherStack API</a></li>
+                <li><a href="https://www.mapbox.com/", target="_blank">Mapbox API</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+
+</html>
